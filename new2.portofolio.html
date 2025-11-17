@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new2.portofolio.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero-section">
+        <img src="img/D-02.png" alt="Profile" class="profile-img">
+        <h2>Hi, I'm Dero</h2>
+        <p>A Programmer | Frontend Backend Developer | Graphic Designer</p>
+        <a href="#projects" class="btn">My Projects</a>
+    </header>
+    <hr size="10" style="background-color: rgb(0, 255, 200);">
+    <section id="about" class="about-section">
+        <h2>About My</h2>
+        <p>I am a frontend and backend user interface developer who is passionate 
+            about creating elegant solutions to complex problems. I specialize in building responsive 
+            and accessible websites that provide a seamless user experience.</p>
+        <p>
+            (Saya adalah pengembang user interface frontend dan backend yang bersemangat dengan bakat untuk 
+            menciptakan solusi elegan untuk masalah yang kompleks. Saya berspesialisasi dalam membangun situs web 
+            yang responsif dan dapat diakses yang memberikan pengalaman pengguna yang lancar.)
+        </p>
+    </section>
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        Untuk Menjadi Seorang Programmer, Beberapa Bahasa Pemograman ini yang Anda Harus Kuasai :
+        <table class="skills-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Programming Language</th>
+                    <th>Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>HTML</td><td>A+</td></tr>
+                <tr><td>2</td><td>CSS</td><td>A+</td></tr>
+                <tr><td>3</td><td>JavaScript</td><td>A+</td></tr>
+                <tr><td>4</td><td>PHP</td><td>A+</td></tr>
+                <tr><td>5</td><td>Python</td><td>A+</td></tr>
+                <tr><td>6</td><td>C++</td><td>A+</td></tr>
+                <tr><td>7</td><td>Java</td><td>A+</td></tr>
+                <tr><td>8</td><td>Node-JS</td><td>A+</td></tr>
+                <tr><td>9</td><td>Visual Basic-Net</td><td>A+</td></tr>
+                <tr><td>10</td><td>Flutter Dart Mobile Androit</td><td>A+</td></tr>
+                <tr><td>11</td><td>Swift IOS</td><td>A+</td></tr>
+                <tr><td>12</td><td>Graphic Designer</td><td>A+</td></tr>
+                <tr><td>13</td><td>Masih banyak lagi yang lainnya bahasa pemograman. Anda bisa mencari nya :</td><td>A+</td></tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="project-cards">
+            <div class="project-card img">
+                <img src="img/User.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>I am learning programming languages, HTML (Hypertext Markup Language) 
+                   and CSS (Cascading style sheets) and I am also learning JS (JavaScript), 
+                   the frontend backend to become a WEB Developer.</p>
+                <button class="project-btn" data-project="Project ">View My Projects</button>
+            </div>
+            <div class="project-card img">
+                <img src="img/office.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>I also studied graphic design, and application design for the user interface.</p>
+                <button class="project-btn" data-project="Project ">View My Projects</button>
+            </div>
+        </div>
+         <!-- Form Popup -->
+         <div class="form-popup" id="projectForm">
+            <div class="form-container">
+                <h2 id="form-title">Form Project</h2>
+                <hr size="4" style="background-color: rgb(0, 255, 200);">
+                    <h3>Proyek 1</h3>
+                    Saya sedang belajar bahasa pemrograman, HTML (Hypertext Markup Language) 
+                    dan CSS (Cascading style sheets)  dan saya juga belajar JS (JavaScript), 
+                    frontend backend untuk menjadi Pengembang WEB.
+                    <h3>Proyek 2</h3>
+                    saya juga belajar desain grafis, dan desain aplikasi untuk user interface
+                    <hr size="4" style="background-color: rgb(0, 255, 200);">
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </div>
+        </div>
+        <script src="new2.portofolio.js"></script>
+    </section>
+    <div class="contact-info">
+        <h1> <p align="center">my address</p></h1>
+        <div class="contact-details">
+            <div class="contact-left">
+                <p>City</p>
+                <p>Telephone/Wa/Telegram</p>
+                <p>Instagram</p>
+                <p>E-mail</p>
+            </div>
+            <div class="contact-right">
+                <p>:Pontianak Kode Pos Umum No.78111</p>
+                <p>:+628----------</p>
+                <p>:@derokardilianto</p>
+                <p>:20412579_dero_k@widyadharma.ac.id</p>
+            </div>
+        </div>
+    </div>
+    <section id="contact" class="contact-section">
+        <h2>Contact My</h2>
+        <form class="contact-form">
+            <form action="#">
+                <!-- Input for the your name -->
+                <input type="text" id="phone" placeholder="Your Name" required>
+               <!-- Input for the your email -->
+               <input type="text" id="phone" placeholder="Your Email" required>
+               <!-- Input for the message -->
+               <input type="text" id="message" placeholder="Enter your message" required>
+               <!-- Button to send the message -->
+               <button onclick="sendMessage()">Send Message</button>
+             </div>
+             <script>
+               function sendMessage() {
+                 // Get the phone number and message from input fields
+                 const phone = document.getElementById("phone").value;
+                 const message = document.getElementById("message").value;
+                // Format the Eemail API URL
+                  window.location.href = "mailto:derokardilianto@gmail.com?subject=Halo&body=Isi%20pesan%20di%20sini";
+                 // Redirect to Eemail
+                 window.open(whatsappUrl, '_blank'); }
+             </script>
+               </form>
+             </section>
+             <footer>
+               <p>&copy; 2025 @derokardilianto. All Rights Reserved.</p>
+             </footer>
+           </body>
+           </html>
+           
